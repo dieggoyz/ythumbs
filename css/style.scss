@@ -1,0 +1,122 @@
+// 
+// scheme colors and styles from @tailwindcss :)
+// https://www.tailwindcss.com/
+// 
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 400 1rem "Inter";
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, .button {
+  background: rgb(79, 70, 229);
+  border-radius: .375rem;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1.25rem;
+  margin: 0;
+  padding: .5rem .75rem;
+  text-transform: none;
+
+  &:hover {
+    background: rgb(99, 102, 241);
+  }
+
+  &#download-button {
+    display: none;
+  }
+}
+
+h1 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+input {
+  appearance: none;
+  box-shadow: inset 0 0 0 calc(1px + 0px) rgb(209, 213, 219);
+  background: #fff;
+  border-radius: .375rem;
+  border: none;
+  color: rgb(17, 24, 39);
+  display: block;
+  font-size: .875rem;
+  font: inherit;
+  line-height: 1.5rem;
+  margin: 0 auto 1rem;
+  padding: .375rem .75rem;
+  width: 100%;
+
+  &:focus {
+    box-shadow: inset 0 0 0 calc(2px + 0px) rgb(79, 70, 229);
+    outline: none;
+  }
+}
+
+p {
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+  text-wrap: balance;
+
+  &.example {
+    // opacity: .75;
+
+    strong {
+      color: rgb(79, 70, 229);
+      // cursor: not-allowed;
+    }
+
+    small {
+      display: block;
+      opacity: .9;
+    }
+  }
+}
+
+main {
+  margin: 0 auto;
+  max-width: 40rem;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.credits {
+  position: absolute;
+  bottom: 1rem;
+  width: 100;
+  right: 0;
+  left: 0;
+  padding: 1rem;
+  color: rgb(79, 70, 229);
+  text-align: center;
+
+  a {
+    font-weight: 600;
+  }
+}
+
+.error {
+  color: rgb(206, 55, 55);
+  display: none;
+  margin-top: -0.5rem;
+  float: left;
+}
