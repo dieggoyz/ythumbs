@@ -8,32 +8,28 @@
   <link rel="icon" href="img/favicon.png">
   <link rel="preconnect" href="https://rsms.me/">
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <main>
-    <div>
-      <h1>Get Youtube video thumbnail images</h1>
+    <div class="info">
+      <h1>Get Youtube video thumbnails</h1>
       <p>To get the video thumbnail of any Youtube video, enter the regular URL of the video into the textbox below.</p>
-      <p class="example">
-        Your URL should look like this: <strong>https://www.youtube.com/watch?v=dQw4w9WgXcQ</strong>
-        <small>
-          Share links like <strong>youtu.be/dQw4w9WgXcQ</strong> are also supported!
-        </small>
-      </p>
-    </div>
-    <div>
-      <input type="text" name="url" id="url" required>
-      <small class="error">Invalid URL structure! 😢</small>
+      <p>Your URL should look like this: <span class="highlight">https://www.youtube.com/watch?v=dQw4w9WgXcQ</span></p>
+      <p><small>"Share links" like <span class="highlight">youtu.be/dQw4w9WgXcQ</span> are also supported!</small></p>
+      <div>
+        <input type="text" name="url" id="url" required>
+        <small class="error">Invalid URL structure! 😢</small>
+      </div>
     </div>
     <div>
       <img src="" alt="" name="thumbnail" id="thumbnail">
       <a href="" name="download-button" id="download-button" class="button">Download</a>
     </div>
+    <div class="credits">
+      made with luv by <a href="https://github.com/diegoeffar">dieggoyz</a>
+    </div>
   </main>
-  <div class="credits">
-    made w luv by <a href="https://github.com/diegoeffar">diegoeffar</a>
-  </div>
   <script src="js/app.js"></script>
 </body>
 </html>

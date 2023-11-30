@@ -1,4 +1,3 @@
-// https://img.youtube.com/vi/ YOUTUBE-CODE /maxresdefault.jpg
 const input = document.getElementById('url');
 const thumbnail = document.getElementById('thumbnail');
 const download = document.getElementById('download-button');
