@@ -1,7 +1,7 @@
 const input = document.getElementById('url');
 const thumbnail = document.getElementById('thumbnail');
 const download = document.getElementById('download-button');
-const error = document.querySelector('.error');
+const error = document.getElementById('error');
 
 function getVideoId(url) {
   const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;

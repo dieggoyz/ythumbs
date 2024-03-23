@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,26 +9,49 @@
   <link rel="preconnect" href="https://rsms.me/">
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <main>
-    <div class="info">
-      <h1>Get Youtube video thumbnails</h1>
-      <p>To get the video thumbnail of any Youtube video, enter the regular URL of the video into the textbox below.</p>
-      <p>Your URL should look like this: <span class="highlight">https://www.youtube.com/watch?v=dQw4w9WgXcQ</span></p>
-      <p><small>"Share links" like <span class="highlight">youtu.be/dQw4w9WgXcQ</span> are also supported!</small></p>
+<body class="bg-zinc-900 text-zinc-400 w-full h-full">
+  <main class="my-0 mx-auto max-w-[640px] py-8 px-4 text-center">
+    <div class="mb-4">
+      <h1 class="text-zinc-200 text-2xl font-bold mb-4">
+        Get Youtube Video Thumbnails
+      </h1>
+      <p class="mb-4 text-balance leading-6">
+        To get the video thumbnail of any Youtube video, enter the regular URL of the video into the textbox below.
+      </p>
+      <p class="mb-4 text-balance leading-6">
+        Your URL should look like this: 
+        <span class="bg-red-900/10 text-red-500 rounded p-1">https://www.youtube.com/watch?v=dQw4w9WgXcQ</span>
+      </p>
+      <p class="mb-4 text-balance leading-6">
+        <small>
+          "Share links" like 
+          <span class="bg-red-900/10 text-red-500 rounded p-1">youtu.be/dQw4w9WgXcQ</span> 
+          are also supported!
+        </small>
+      </p>
       <div>
-        <input type="text" name="url" id="url" required>
-        <small class="error">Invalid URL structure! 😢</small>
+        <input 
+          type="text" 
+          name="url" 
+          id="url"
+          class="appearance-none border-none bg-zinc-100/10 rounded shadow-inner text-white block text-sm leading-6 w-full focus:outline-0 transition-duration-250 py-1 px-3" 
+          required
+        >
+        <small 
+          id="error"
+          class="hidden text-red-500 text-sm leading-5 mt-1 mx-auto mb-4"
+        >Invalid URL structure! 😢</small>
       </div>
     </div>
     <div>
-      <img src="" alt="" name="thumbnail" id="thumbnail">
-      <a href="" name="download-button" id="download-button" class="button">Download</a>
+      <img src alt name="thumbnail" id="thumbnail" class="w-full h-auto mb-4">
+      <a href name="download-button" id="download-button" class="hidden bg-red-500 text-white rounded text-sm font-semibold leading-5 mt-0 mx-auto mb-4 py-2 px-3">Download</a>
     </div>
-    <div class="credits">
+    <footer class="bg-zinc-900 border-t border-zinc-100/10 right-0 bottom-0 left-0 fixed w-full text-center p-4">
       made with luv by <a href="https://github.com/diegoeffar">dieggoyz</a>
-    </div>
+    </footer>
   </main>
   <script src="js/app.js"></script>
 </body>
