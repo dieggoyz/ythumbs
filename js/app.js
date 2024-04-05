@@ -16,5 +16,5 @@ input.addEventListener('keyup', (e) => {
   download.href = videoId ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` : '';
   download.download = videoId ? `${videoId}-thumbnail.jpg` : '';
   download.style.display = videoId ? 'inline-block' : 'none';
-  error.style.display = videoId ? 'none' : 'block';
+  error.style.display = url && !videoId ? 'block' : 'none';
 });
