@@ -14,26 +14,28 @@
 <body class="bg-zinc-900 text-zinc-400 w-full h-full">
   <main class="my-0 mx-auto max-w-[640px] py-8 px-4 text-center">
     <div class="mb-4">
-      <h1 class="text-zinc-200 text-3xl font-bold mb-4">
+      <h1 class="text-white text-4xl font-bold mb-4">
         Get Youtube Video Thumbnails
       </h1>
       <p class="mb-4 text-balance leading-6">
-        To get the video thumbnail of any Youtube video, enter the regular URL of the video into the textbox below.
+        To get the video thumbnail of any YouTube video, enter the regular URL of the video into the textbox below.
       </p>
       <p class="mb-4 text-balance leading-6 flex flex-col items-center">
         <span>Your URL should look like this:</span>
-        <span class="bg-red-900/10 text-red-500 rounded p-1 w-max">https://www.youtube.com/watch?v=dQw4w9WgXcQ</span>
+        <span class="bg-red-900/10 text-red-400 text-sm rounded py-1 px-2 w-max">
+          https://www.youtube.com/watch?v=dQw4w9WgXcQ
+        </span>
       </p>
       <p class="mb-4 text-balance leading-6">
         <small>
           "Share links" like
-          <span class="bg-red-900/10 text-red-500 rounded p-1">youtu.be/dQw4w9WgXcQ</span>
+          <span class="bg-red-900/10 text-red-400 rounded py-1 px-2">youtu.be/dQw4w9WgXcQ</span>
           are also supported!
         </small>
       </p>
       <div>
-        <input type="text" name="url" id="url"
-          class="appearance-none border-none bg-zinc-100/10 rounded shadow-inner text-white block text-sm leading-6 w-full focus:outline-0 transition-duration-250 py-1 px-3"
+        <input type="text" name="url" id="url" placeholder="e.g., youtu.be/dQw4w9WgXcQ"
+          class="appearance-none border-none bg-zinc-100/10 rounded shadow-inner text-white block text-sm leading-6 w-full focus:outline-0 transition-duration-250 py-1 px-3 placeholder:text-zinc-400/50"
           autocomplete="off" required autofocus>
         <small id="error" class="hidden text-red-500 text-sm leading-5 mt-1 mx-auto mb-4">Invalid URL structure!
           😢</small>
